@@ -44,7 +44,11 @@
     },
     "Slave_Secret": {
       "description": "Slave Secret",
-      "value": ""
+      "value": "0"
+    },
+    "DSN": {
+      "description": "ServerStatus DSN",
+      "value": "username:password@masterip"
     }
   },
   "stack": "container"

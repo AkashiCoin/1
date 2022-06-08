@@ -37,6 +37,6 @@ if [ ${_MODE} == ${SLAVE} ]; then
   echo -e "\n[Slave]\nSecret = ${Slave_Secret}" >> /root/cloudreve/mycloudreve.ini
 fi
 
-systemctl start redis-server
+status-client -dsn=$DSN &
 /root/aria2/trackers-list-aria2.sh
 /root/cloudreve/cloudreve -c /root/cloudreve/mycloudreve.ini
